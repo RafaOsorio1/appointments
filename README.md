@@ -1,34 +1,75 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Appointments
 
-## Getting Started
+Este proyecto de momento es solo para poner en practica lo aprendido hasta el momento, se estan utilizando las siguientes librerías:
 
-First, run the development server:
+- @hookform/resolvers
+- @nextui-org/react
+- @tanstack/react-query
+- @tanstack/react-table
+- @types/node
+- @types/react-dom
+- framer-motion
+- next
+- react-hook-form
+- tailwindcss
+- typescript
+- zod
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Estas librerías las estamos usando con React y TypeScript
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Instalación
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Siga estos pasos para configurar y ejecutar el proyecto en su entorno local:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1.  Clona el repositorio desde GitHub: \*Esto funciona en macOS y windows
 
-## Learn More
+        ```bash
+        git clone https://github.com/tuusuario/tuproyecto.git
+        cd tuproyecto
 
-To learn more about Next.js, take a look at the following resources:
+        ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2.  Instala las dependencias del proyecto utilizando PNPM:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    - pnpm install
 
-## Deploy on Vercel
+3.  Configura Visual Studio Code (VS Code) para aplicar las reglas de ESLint y Prettier automáticamente al guardar los archivos. Abre tu proyecto en VS Code y sigue estos pasos:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    - Crea un archivo llamado .vscode/settings.json si aún no existe.
+    - Agrega las siguientes configuraciones al archivo settings.json:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+      ```json
+      {
+        "editor.codeActionsOnSave": {
+          "source.organizeImports": true,
+          "source.fixAll.eslint": true,
+        },
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "[typescript]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true,
+            "source.organizeImports": true
+          }
+        }
+      }
+      ```
+    Estas configuraciones permitirán que VS Code formatee automáticamente tu código y organice las importaciones al guardar los archivos.
+
+4.  Ahora estás listo para ejecutar tu proyecto localmente. Utiliza el siguiente comando para iniciar tu aplicación Next.js:
+    ```bash
+        pnpm run dev
+    ```
+
+Tu aplicación debería estar disponible en http://localhost:3000.
+
+⚠️⚠️
+Antes de empezar a codear debes crear una nueva rama a partir de la rama dev, esto con el fin de crear un espacio seguro de desarrollo y no afectes a los demás
+⚠️⚠️
+
+¡Listo! Tu proyecto debería estar configurado y listo para funcionar en tu entorno local con todas las configuraciones necesarias para ESLint, Prettier y Visual Studio Code.
+
+Si encuentras algún problema durante la instalación o ejecución del proyecto, asegúrate de verificar las dependencias y las configuraciones mencionadas anteriormente, además asegurate de que las extensiones esten actualizadas en especial la de prettier.
+
+Happy Coding!!
